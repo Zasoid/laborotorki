@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Медиазапросы для мобильной версии */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Вертикальное расположение элементов меню */
+        align-items: center; /* Центрирование элементов */
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
+    }
+
+    .header {
+        text-align: center; /* Центрирование заголовка */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 24px; /* Уменьшение размера заголовка на мобильных */
+    }
+
+    .nav li {
+        margin: 5px 0; /* Отступы между элементами меню */
+    }
+
+    .card {
+        padding: 15px; /* Уменьшение отступов в карточках */
+    }
+}
