@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Светлый фон */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    flex-direction: column; /* Вертикальное направление */
+    height: 100vh; /* Полная высота окна */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.container {
+    text-align: center; /* Центрирование текста */
+    background-color: #fff; /* Белый фон блока */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для эффекта глубины */
+}
+
+button {
+    background-color: #007bff; /* Синий фон кнопки */
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель курсора при наведении */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+button:hover {
+    background-color: #0056b3; /* Темно-синий фон при наведении */
+}
