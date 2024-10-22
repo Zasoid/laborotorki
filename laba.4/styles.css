@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Светлый фон */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Полная высота окна */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.container {
+    text-align: center; /* Центрирование текста */
+}
+
+.box {
+    background-color: #fff; /* Белый фон блока */
+    border: 2px solid #007bff; /* Синяя рамка */
+    padding: 20px; /* Внутренние отступы */
+    margin: 20px; /* Внешние отступы */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для эффекта глубины */
+    transition: transform 0.3s; /* Плавный переход для эффекта наведения */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Увеличение блока при наведении */
+}
+
+.button {
+    background-color: #28a745; /* Зеленый фон кнопки */
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Внутренние отступы */
+    text-decoration: none; /* Без подчеркивания */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+.button:hover {
+    background-color: #218838; /* Темно-зеленый фон при наведении */
+}
