@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Светлый фон */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    flex-direction: column; /* Вертикальное направление */
+    height: 100vh; /* Полная высота окна */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.container {
+    background-color: #fff; /* Белый фон блока */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для эффекта глубины */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr {
+    opacity: 0; /* Начальная непрозрачность для анимации */
+    transition: opacity 0.5s; /* Плавный переход для анимации */
+}
+
+tr.visible {
+    opacity: 1; /* Конечная непрозрачность для анимации */
+}
